@@ -47,6 +47,19 @@ export default {
   created: async function() {
     // Vue.jsの読み込みが完了したときに実行する処理はここに記述する
     // apiからarticleを取得する
+    /* //この部分は元のやつから使う予定のもの
+     if (
+      window.localStorage.getItem("userId") &&
+      window.localStorage.getItem("token")
+    ) {
+      this.iam = window.localStorage.getItem("userId");
+      await this.getArticles();
+    } else {
+      window.localStorage.clear();
+      this.$router.push({ name: "Login" });
+    }
+    */
+    this.$router.push({name:'View'})
   },
 
   methods: {
