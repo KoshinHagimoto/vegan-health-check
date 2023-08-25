@@ -34,3 +34,7 @@ function calculateDailyNutrientGoals(weight, sex, height, age) {
         zinc
     };
 }
+
+module.exports = {
+    calculateDailyNutrientGoals
+};
