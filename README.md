@@ -3,6 +3,8 @@
 ## 目次
   - [目次](#目次)
   - [設計](#設計)
+    - [技術スタックの構成図](#技術スタックの構成図)
+      - [AWS環境](#AWS環境) 
     - [テーブル図](#テーブル図)
       - [Userテーブル](#userテーブル)
       - [Articleテーブル](#articleテーブル)
@@ -35,6 +37,22 @@
         - [GET `/ingredients`](#get-ingredients)
 
 ## 設計
+
+### 技術スタックの構成図
+<img width="823" alt="スクリーンショット 2023-08-25 16 34 27" src="https://github.com/intern-mti/team3-app/assets/127278864/163525fa-13f4-40c4-8e19-0a986c67275c">
+
+#### AWS環境
+- S3
+  - Buildした静的コンテンツをデプロイ環境として利用.
+- Lambda
+  - イベントドリブンでコードを実行する.
+  - API Gatewayと組み合わせるとWeb APIとして機能できる.
+- API Gateway
+  - APIのエンドポイント. リクエストをLambdaへ捌く. 
+- Dynamo DB
+  - NoSQLのデータベース. Key-Value方式でデータを保存. 
+- Cloud Watch
+  - APIのログを確認する. 
 
 ### テーブル図
 
