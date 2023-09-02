@@ -43,7 +43,8 @@
 ## 設計
 
 ### 技術スタックの構成図
-<img width="823" alt="スクリーンショット 2023-08-25 16 34 27" src="https://github.com/intern-mti/team3-app/assets/127278864/163525fa-13f4-40c4-8e19-0a986c67275c">
+<img width="823" alt="技術スタック構成図" src="https://github.com/KoshinHagimoto/vegan-health-check/assets/127278864/fc066f97-1e3d-4bae-8397-a6f0a86a82e9">
+
 
 #### AWS環境
 - S3
